@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "TicketSystem1_backend": {
+      "candid": "src/TicketSystem1_backend/TicketSystem1_backend.did",
+      "package": "TicketSystem1_backend",
+      "type": "rust"
+    },
+    "TicketSystem1_frontend": {
+      "dependencies": [
+        "TicketSystem1_backend"
+      ],
+      "source": [
+        "src/TicketSystem1_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "TicketSystem1_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
